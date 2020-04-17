@@ -1,14 +1,14 @@
 name: Build pipeline
 
 # When should this pipeline run?
-# on pushes to master and PRs to master
+# on pushes to master and PRs to master (replaced here by end-result)
 # Note that you may not want to build packages on pull requests!
 # You could also use on: release: ..., for deploying upon tagging a release.
 on:
   push:
-    branches: [ master ]
+    branches: [ end-result ]
   pull_request:
-    branches: [ master ]
+    branches: [ end-result ]
 
 # What jobs does this workflow consist of?
 jobs:
